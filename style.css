@@ -52,7 +52,7 @@
 .todo-add__input {
   width: 56%;
   display: inline-block;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .todo-add {
@@ -129,7 +129,7 @@
 
 .list-item--edit .list-item__input {
   display: inline-block;
-  width: 224px
+  width: 224px;
 }
 
 .list-item--edit .list-item__title {
@@ -156,16 +156,16 @@
 }
 
 .list-item__input {
-  width: 226px
+  width: 226px;
 }
 
 /* Completed */
 .todo-list--completed .list-item__title {
-  text-decoration: line-through
+  text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 .list-item__input {
-  display: none
+  display: none;
 }
