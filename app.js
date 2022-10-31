@@ -32,9 +32,9 @@ var createNewTaskElement=function(taskString){
     var deleteButton=document.createElement("button");//delete button
     var deleteButtonImg=document.createElement("img");//delete button image
 
-    listItem.className = 'todo-list__item list-item';
+    listItem.className = "todo-list__item list-item";
     label.innerText=taskString;
-    label.className='list-item__title';
+    label.className="list-item__title";
 
     //Each elements, needs appending
     checkBox.className="list-item__checkbox";
@@ -47,8 +47,8 @@ var createNewTaskElement=function(taskString){
 
     deleteButton.className="list-item__delete button button--delete";
     deleteButtonImg.className="button__image"
-    deleteButtonImg.src='./remove.svg';
-    deleteButtonImg.alt='Remove';
+    deleteButtonImg.src="./remove.svg";
+    deleteButtonImg.alt="Remove";
     deleteButton.appendChild(deleteButtonImg);
 
 
@@ -86,7 +86,7 @@ var editTask=function(){
 
     var listItem=this.parentNode;
 
-    var editInput=listItem.querySelector('input[type=text]');
+    var editInput=listItem.querySelector("input[type=text]");
     var label=listItem.querySelector(".list-item__title");
     var editBtn=listItem.querySelector(".list-item__edit");
     var containsClass=listItem.classList.contains("list-item--edit");
