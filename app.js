@@ -22,7 +22,7 @@ var createNewTaskElement=function(taskString){
     //input (checkbox)
     var checkBox=document.createElement("input");//checkbx
     //label
-    var label=document.createElement("label");//label
+    var label=document.createElement("p");//label
     //input (text)
     var editInput=document.createElement("input");//text
     //button.edit
@@ -45,7 +45,8 @@ var createNewTaskElement=function(taskString){
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="list-item__edit button button--edit";
 
-    deleteButton.className="button button--delete";
+    deleteButton.className="list-item__delete button button--delete";
+    deleteButtonImg.className="button__image"
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -85,7 +86,7 @@ var editTask=function(){
     var listItem=this.parentNode;
 
     var editInput=listItem.querySelector('input[type=text]');
-    var label=listItem.querySelector("label");
+    var label=listItem.querySelector(".list-item__title");
     var editBtn=listItem.querySelector(".list-item__edit");
     var containsClass=listItem.classList.contains("list-item--edit");
     //If class of the parent is .list-item--edit

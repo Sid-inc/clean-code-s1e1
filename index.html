@@ -6,28 +6,28 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body class="body">
-    <div class="header">
+    <header class="header">
       <img class="header__image" src="./eisenhower-matrix.jpg">
       <a 
           class="header__link" 
           href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
-    </div>
-    <div class="todo">
-      <p class="todo__header">
+    </header>
+    <main class="todo">
+      <header class="todo__header">
         <label class="todo__title todo__title--offset" for="new-task">Add Item</label>
         <div class="todo__add todo-add">
-          <input class="todo-add__input input input--width" id="new-task"  type="text">
+          <input class="todo-add__input input input--width" id="new-task" type="text">
           <button class="todo-add__action button">Add</button>
         </div>
-      </p>
+      </header>
       <h3 class="todo__title">Todo</h3>
       <ul class="todo__list todo-list" id="incompleteTasks">
         <li class="todo-list__item list-item">
           <input class="list-item__checkbox" type="checkbox">
-          <label class="list-item__title">Pay Bills</label>
-          <input class="list-item__input input" type="text" >
+          <p class="list-item__title">Pay Bills</p>
+          <input class="list-item__input input" type="text">
           <button class="list-item__edit button button--edit">Edit</button>
           <button class="list-item__delete button button--delete">
             <img class="button__image" src="./remove.svg">
@@ -35,7 +35,7 @@
         </li>
         <li class="todo-list__item list-item list-item--edit">
           <input class="list-item__checkbox" type="checkbox">
-          <label class="list-item__title">Go Shopping</label>
+          <p class="list-item__title">Go Shopping</p>
           <input class="list-item__input input" type="text" value="Go Shopping">
           <button class="list-item__edit button button--edit">Save</button>
           <button class="list-item__delete button button--delete">
@@ -47,7 +47,7 @@
       <ul class="todo__list todo-list todo-list--completed" id="completed-tasks">
         <li class="todo-list__item list-item">
           <input class="list-item__checkbox" type="checkbox" checked>
-          <label class="list-item__title">See the Doctor</label>
+          <p class="list-item__title">See the Doctor</p>
           <input class="list-item__input input" type="text">
           <button class="list-item__edit button button--edit">Edit</button>
           <button class="list-item__delete button button--delete">
@@ -55,7 +55,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
