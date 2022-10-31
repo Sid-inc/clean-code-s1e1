@@ -60,12 +60,12 @@
 }
 
 .todo-list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .todo-list__item {
-  list-style:none;
+  list-style: none;
 }
 
 .button {
@@ -75,7 +75,7 @@
   font-size: 15px;
   width: 60px;
   font-family: Lato, sans-serif;
-  outline:none;
+  outline: none;
   cursor: pointer;
 }
 
@@ -104,7 +104,7 @@
   background: #FFF;
   border-radius: 6px;
   font-family: Lato, sans-serif;
-  outline:none;
+  outline: none;
   color: #888;
 }
 
@@ -128,12 +128,12 @@
 }
 
 .list-item--edit .list-item__input {
-  display:inline-block;
-  width:224px
+  display: inline-block;
+  width: 224px
 }
 
 .list-item--edit .list-item__title {
-  display:none;
+  display: none;
 }
 
 .list-item__checkbox,
@@ -167,5 +167,5 @@
 
 /* Edit Task */
 .list-item__input {
-  display:none
+  display: none
 }
